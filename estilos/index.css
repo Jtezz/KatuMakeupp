@@ -1,0 +1,18 @@
+#barra li a:hover{
+    color:#B94AF3;
+}
+
+#carruselMain .carousel-inner img{
+    max-height: 91vh;
+    object-fit: cover;
+}
+
+#caracter .row img{
+    display:block;
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+#caracter .row {
+    text-align: center;
+}

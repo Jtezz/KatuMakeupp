@@ -1,4 +1,16 @@
 #perfil img{
     padding-top:2em;
     width: 75%;
+    display:block;
+    margin:auto;
+    padding-bottom: 1em ;
+}
+#descripcion {
+    background-color:wheat;
+    scroll-padding-left: 1em;
+    font-size: large;
+}
+#descripcion hr{
+    height: 2px;
+    background-color:lightsalmon;
 }

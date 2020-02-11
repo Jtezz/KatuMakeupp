@@ -14,6 +14,12 @@
     margin-bottom:20px;
     width: 70%;
 }
-#caracter {
-    text-align: center;
+
+#caracter{
+    text-align:center ;
+    background-color:wheat;
 }
+#caracter .row .card{
+    text-align: left;
+}
+    

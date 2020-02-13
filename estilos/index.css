@@ -1,25 +1,70 @@
 #barra li a:hover{
-    color:#B94AF3;
+    
+    color: #ffffff;
+}
+#barra{
+    background-color: #F3969A;
+
 }
 
 #carruselMain .carousel-inner img{
     max-height: 91vh;
     object-fit: cover;
 }
-
-#caracter .row img{
+#portafolio{
+    text-align: center;
+    
+}
+#servicio{
     display:block;
     margin:auto;
     margin-top: 20px;
-    margin-bottom:20px;
-    width: 70%;
-}
-
-#caracter{
-    text-align:center ;
-    background-color:wheat;
-}
-#caracter .row .card{
-    text-align: left;
-}
+    text-align:center;
+    font-family: "Merienda One";
     
+}
+#servicio hr{
+    background-color: #F3969A ;
+    font-size: x-large;
+}
+#servicio .row img{
+    height: 300px;
+}
+#portafolio a{
+    background-color: #F3969A ;
+    color: #ffffff;
+    text-decoration:none;
+    font-size: x-large;
+}
+#contacto{
+    background-color:#56CC9D;
+    color: lightcyan;
+    font-family: "Merienda One";
+    text-align: center;
+}
+#contacto a{
+    background-color: lightcyan ;
+    font-size: x-large;
+    height: 50px;
+    color: #56CC9D;
+}
+#footer {
+    text-align: center;
+    background-color: #343a40;
+    color: #ffffff;
+
+}
+#footer a{
+    text-decoration:none;
+    color:#ffffff;
+}
+#footer a:hover{
+    color:#77818b;
+
+}
+#footer img{
+    max-height: 36px;
+}
+#servicio h1{
+    font-family: "Merienda One";
+}

@@ -8,13 +8,16 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos/index.css">
+    <!--Fuentes-->
+    <link href="https://fonts.googleapis.com/css?family=Merienda+One&display=swap" rel="stylesheet">
+
     <title>Katu Makeup</title>
   </head>
   <body>
 
   <!-- Navbar-->
   
-    <nav id="barra" class="navbar navbar-expand-lg  navbar-light bg-light">
+    <nav id="barra" class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
         <a class="navbar-brand" href="#">
         <img src="/docs/4.4/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
@@ -45,11 +48,6 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="paginas/contacto.html">Contacto</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.instagram.com/katumakeup.cl/">
-            <img src="img/Instagram_icon-icons.com_66804.png" width="30" height="30" alt="icono.ig">
-            </a>
           </li>
         </ul>
       </div>
@@ -87,41 +85,86 @@
     <!--/Carrucel-->
 
     <!--caracteristicas-->
-    <div id="caracter" class="container-fluid pt-4">
-      <h2 id="tituloServicio" class="pb-3">Servicios de:</h2>
-      <div class="row offset-1">
-          <div class="col-md-5 col-xs-12 mb-4">
-            <div class="card-deck">
-              <div class="card">
-                <img class="img-fluid img-top" id="icono-maquillaje"  src="img/maquillaje.jpeg" alt="maquillaje.png" >
-                <div class="card-body">
-                  <span class="badge badge-danger pr-1">Social</span>
-                  <span class="badge badge-warning">Novias</span>
-                  <span class="badge badge-pill badge-info">Moda</span>
-                  <h2 class="card-title">Maquillaje Profesional</h2>
-                  
-                  <p class="card-text"><a class="btn btn-primary" href="#" role="button">Ver mas</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-5 col-xs-12 mb-4">
-            <div class="card-deck">
-              <div class="card">
-              <img class="img-fluid img-top" id="icono-cepillo" src="img/peinado.jpeg" alt="cepillo.png" background-size="contain">              
-              <div class="card-body">
-              <span class="badge badge-danger">Social</span>
-              <span class="badge badge-warning" >Novias</span>
-              <span class="badge badge-pill badge-info">Moda</span>
-                <h2 class="card-title pb-2">Peinados Profesional</h2>
-                <p class="card-text"><a class="btn btn-primary" href="#" role="button">Ver mas</a></p>
-              </div>
-              </div>
-            </div>
-          </div>
+    <div id="servicio" class="container">
+    <!-- Three columns of text below the carousel -->
+    <h1 class="pt-2 pb-4 mb-4 mt-2">Sercivio de Make up a domimicilio</h1>
+    <div><hr></div>
+    <div class="row pt-2 pb-2">
+    
+      <div class="col-lg-6 col-xs-12 pt-2 pb-2">
+        <img class="bd-placeholder rounded-circle" src="img/maquillaje.jpeg" placeholder="maquilaje.png">
+        <h2 class="pt-1">Maquilaje</h2>
+        <p>Realzar la bellaza natural de cada mujer es lo que me apaciona.</p>
+        <p>Seguridad, confianza y autenticidad son las cualidades que te dara mi maquilaje, dejalo en mis manos !</p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-6 col-xs-12 pt-2 pb-2">
+        <img id="peinado" class="bd-placeholder rounded-circle" src="img/peinado.jpeg" placeholder="peinado.png">
+        <h2 class="pt-1">Peinados</h2>
+        <p>Para sacar el maximo partido de un gran maquillaje debe ir acompañado de un atractivo peinado , que haga sacar el cien porciento de tu belleza</p>
+      </div><!-- /.col-lg-4 -->
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+  </div>
+    <div id="portafolio" class="container-fluid pb-5 pt-5 center">
+      <div class="row">
+        <div class="col">
+        <a id="btn-portafolio" class=" btn pt-2 pb-2" href="paginas/portafolio.html" role="button">Ver portafolio</a>
+        </div>
+      </div>
     </div>
+
     <!--/caracteristicas-->
+    <!--Contacto-->
+    <div id="contacto" class="container-fluid pb-5 pt-5 center">
+     <div class="row ">
+        <div class="col ">
+        <h2 class="">Si tienes dudas o quieres agendar tu hora</h2>
+        <a class="btn " href="paginas/contacto.html" role="button">Haz click aquí</a>
+       </div>
+      </div>
+    </div>
   <!--/Main-->
+  <!--footer-->
+  <!-- Footer -->
+<footer id="footer" class="page-footer ">
+  <!-- Footer Elements -->
+  <div class="container">
+    <!-- Grid row-->
+    <div class="row">
+      <!-- Grid column -->
+      <div class="col-md-12 pt-4">
+        <div class="mb-1 center">
+          <!-- Facebook -->
+          <a>
+            <img src="img/FB_icon-icons.com_65534.png">
+          </a>
+          <!--Instagram-->
+          <a>
+            <img src="img/INSTAGRAM_icon-icons.com_65535.png">
+          </a>
+          <!--Correo-->
+          <a>
+          <img src="img/GMAIL_icon-icons.com_65540.png">
+          </a>
+        </div>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="#"> katumakeup.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+  <!--/footer-->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

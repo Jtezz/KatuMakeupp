@@ -7,13 +7,14 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="../estilos/portafolio.css">
     <title>Hello, world!</title>
   </head>
   <body>
     <!-- Navbar-->
-  <div class="container">
-    <nav id="barra" class="navbar navbar-expand-lg  navbar-light bg-light">
+  
+    <nav id="Nav" class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
       <a class="navbar-brand" href="#">
       <img src="/docs/4.4/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
       </a>
@@ -44,17 +45,90 @@
         <li class="nav-item">
           <a class="nav-link" href="contacto.html">Contacto</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://www.instagram.com/katumakeup.cl/">
-          <img src="../img/Instagram_icon-icons.com_66804.png" width="30" height="30" alt="icono.ig">
-          </a>
-        </li>
       </ul>
     </div>
   </nav>
 </div>
 
   <!--/Navbar-->
+
+  <!--Portafolio-->
+
+   <h1 class="title text-center display-4 my-4"> Mis Trabajos</h1>
+   <div class="container">
+
+   <div><hr></div>
+   </div>
+  <!--Cards--->
+    <div class="container">
+      <div class="card-columns" id="portafolio">
+      </div>
+    </div>
+  <!--Scrip Portafolio-->
+    <!-- Footer -->
+<footer id="footer" class="page-footer ">
+  <!-- Footer Elements -->
+  <div class="container">
+    <!-- Grid row-->
+    <div class="row">
+      <!-- Grid column -->
+      <div class="col-md-12 pt-4">
+        <div class="mb-1 center">
+          <!-- Facebook -->
+          <a>
+            <img src="../img/FB_icon-icons.com_65534.png">
+          </a>
+          <!--Instagram-->
+          <a>
+            <img src="../img/INSTAGRAM_icon-icons.com_65535.png">
+          </a>
+          <!--Correo-->
+          <a>
+          <img src="../img/GMAIL_icon-icons.com_65540.png">
+          </a>
+        </div>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="#"> katumakeup.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+    <script>
+
+    var imagenes =[1,2,3,4,5,6,7];
+    var galeria = document.getElementById('portafolio');
+    
+    for(imagen of imagenes){
+      galeria.innerHTML += `
+      <div class="card">
+        <a href="#"  data-toggle="modal" data-target="#img${imagen}">
+            <img src="img/m${imagen}.jpg" class="card-img-top">
+      </div> 
+        <!-- Modal -->
+        <div class="modal fade" id="img${imagen}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+          </button>
+              <div class="modal-dialog modal-lg modal-dialog-centered" role="document"> 
+                <img src="img/m${imagen}.jpg" alt="" class="img-fluid rounded">
+              </div>
+        </div>
+      `;
+    }
+
+    </script>
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

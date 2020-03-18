@@ -1,29 +1,17 @@
+/*Barra*/
 #barra li a:hover{
+    
     color: #ffffff;
 }
 #barra{
     background-color: #F3969A;
+
 }
-#perfil img{
-    padding-top:2em;
-    width: 75%;
-    display:block;
-    margin:auto;
-    padding-bottom: 1em ;
-}
-#descripcion {
-    scroll-padding-left: 1em;
-    font-size: large;
-}
-#descripcion hr{
-    height: 2px;
-    background-color:lightsalmon;
-}
+/*Footer*/
 #footer {
     text-align: center;
     background-color: #343a40;
     color: #ffffff;
-
 }
 #footer a{
     text-decoration:none;
@@ -35,4 +23,10 @@
 }
 #footer img{
     max-height: 36px;
+}
+#servicio h1{
+    font-family: "Merienda One";
+}
+#card{
+    border:none;
 }

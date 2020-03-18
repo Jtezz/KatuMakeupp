@@ -7,13 +7,14 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="../estilos/contacto.css">
     <title>Hello, world!</title>
   </head>
   <body>
    <!-- Navbar-->
-  <div class="container">
-    <nav id="barra" class="navbar navbar-expand-lg  navbar-light bg-light">
+  
+    <nav id="barra" class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
       <a class="navbar-brand" href="#">
       <img src="/docs/4.4/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
       </a>
@@ -44,17 +45,89 @@
         <li class="nav-item">
           <a class="nav-link" href="contacto.html">Contacto</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://www.instagram.com/katumakeup.cl/">
-          <img src="../img/Instagram_icon-icons.com_66804.png" width="30" height="30" alt="icono.ig">
-          </a>
-        </li>
       </ul>
     </div>
   </nav>
 </div>
 
   <!--/Navbar-->
+
+
+  <!--Formulario-->
+<div class="container">
+    <h1 class="title text-center display-4 my-4"> Contactame!</h1>
+    <div><hr></div>
+  <div class="row pb-5">
+    <div class="col-6 mt-5 pt-2">
+      <form>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Nombre</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Asunto</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+        </div>
+        <div class="form-group pb-5">
+          <label for="exampleFormControlTextarea1">Mensaje</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button class="btn btn-lg btn-primary">Enviar</button>
+      </form>
+    </div>
+    <div class="col-3">
+      <img src="../img/ing.png" class="card-img-top">
+      <h2>
+      <a class="" href="https://www.instagram.com/katumakeup.cl/">@katumakeup.cl</a>
+    </div>
+    <div class="col-3">
+    <img src="../img/wsp.png" class="card-img-top">
+      <h2>
+      <a>+56912345678</a>
+      </h2>
+    </div>
+    
+  </div>
+</div>
+  <!-- Footer -->
+<footer id="footer" class="page-footer ">
+  <!-- Footer Elements -->
+  <div class="container">
+    <!-- Grid row-->
+    <div class="row">
+      <!-- Grid column -->
+      <div class="col-md-12 pt-4">
+        <div class="mb-1 center">
+          <!-- Facebook -->
+          <a>
+            <img src="../img/FB_icon-icons.com_65534.png">
+          </a>
+          <!--Instagram-->
+          <a>
+            <img src="../img/INSTAGRAM_icon-icons.com_65535.png">
+          </a>
+          <!--Correo-->
+          <a>
+          <img src="../img/GMAIL_icon-icons.com_65540.png">
+          </a>
+        </div>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="#"> katumakeup.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

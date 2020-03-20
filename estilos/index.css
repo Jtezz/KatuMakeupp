@@ -22,19 +22,19 @@
     background-color: rgb(255, 129, 135);
 }
 #servicio{
-    display:block;
     margin:auto;
     margin-top: 20px;
     text-align:center;
     font-family: 'Open Sans', sans-serif;
     background-color: rgb(255, 129, 135);
+    display: block;
 }
 #servicio hr{
     background-color:rgb(151, 52, 57);
     font-size: x-large;
     height: 5px;
-    width: 350px;
-    border-radius: 1em/5em;
+    width: 300px;
+    border-radius: 10px;
 }
 
 #servicio .row img{
@@ -104,13 +104,17 @@
     font-size: 60px;
 }
 #card{
+    margin:auto;
+    text-align: center;
+    display: flex;
     border:none;
     background-color:white;
-    max-width: 500px;
-    height: 620px;
-}
+    max-width: 400px;
+    height: 550px;
+    display: flex;
+    }
 #card img{
-    height: 420px;
+    height: 60%;
     
 }
 #card p{

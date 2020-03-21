@@ -6,6 +6,7 @@
 #carruselMain .carousel-inner img{
     max-height: 600px;
     object-fit: cover;
+    filter:brightness(0.75);
 }
 .carousel-item{
     width: 100%;
@@ -17,6 +18,15 @@
     font-family: 'Open Sans', sans-serif;
     text-align: center;
 }
+#carruselMain p{
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+}
+#carruselMain h2{
+    font-size: 48px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+}
 /*Tarjetas*/
 #fondo{
     background-color: rgb(255, 129, 135);
@@ -26,34 +36,38 @@
     margin-top: 20px;
     text-align:center;
     font-family: 'Open Sans', sans-serif;
-    background-color: rgb(255, 129, 135);
     display: block;
 }
 #servicio hr{
     background-color:rgb(151, 52, 57);
     font-size: x-large;
     height: 5px;
-    width: 300px;
+    width: 10rem;
     border-radius: 10px;
 }
 
 #servicio .row img{
     max-height: 400px;
     max-width: 100%;
+    
 }
 /*Link portafolio*/
 #portafolio a:hover{
-    background-color: white;
-    color: #F3969A;
+    background-color:rgb(44, 44, 44);
+    color:#F3969A;
 }
 #portafolio{
     text-align:center;
 }
+#portafolio hr{
+    max-width: 30rem;
+}
 #portafolio h2{
     font-size:40px;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    color: white;
+    font-style: italic;
+    font-weight: 400;
+    color:rgb(44, 44, 44);
 }
 #portafolio a{
     background-color: #F3969A ;
@@ -100,7 +114,7 @@
 }
 #servicio h1{
     font-family: 'Open Sans', sans-serif;
-    color:whitesmoke;
+    color:rgb(44, 44, 44);
     font-size: 60px;
 }
 #card{
@@ -110,11 +124,11 @@
     border:none;
     background-color:white;
     max-width: 400px;
-    height: 550px;
+    max-height: 800px;
     display: flex;
     }
 #card img{
-    height: 60%;
+    height: 80%;
     
 }
 #card p{

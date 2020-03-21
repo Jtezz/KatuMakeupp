@@ -63,7 +63,7 @@
     max-width: 30rem;
 }
 #portafolio h2{
-    font-size:40px;
+    font-size:32px;
     font-family: 'Open Sans', sans-serif;
     font-style: italic;
     font-weight: 400;
@@ -77,7 +77,7 @@
 }
 /*Contacto Banner*/
 #contacto{
-    background-color:rgb(134, 238, 196);
+    background-color:#d2c6e3;
     background-image: url('../img/pintura.png');
     background-repeat: no-repeat;
     color: white;
@@ -89,7 +89,7 @@
     background-color: whitesmoke;
     font-size: x-large;
     height: 50px;
-    color: #56CC9D;
+    color: #bca0e2;
 }
 #contacto a:hover{
     color:whitesmoke;
@@ -132,10 +132,10 @@
     
 }
 #card p{
-    font-size: 16px;
+    font-size: 18px;
 }
 #card h2{
     font-weight: 400;
     font-style: italic;
-    font-size: 40px;
+    font-size: 28px;
 }

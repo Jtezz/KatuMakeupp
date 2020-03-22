@@ -8,55 +8,59 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/portafolio.css">
-    <title>Katu Antivilo|Portafolio</title>
+    <!--Fuentes-->
+    <link href="https://fonts.googleapis.com/css?family=Yellowtail&display=swap" rel="stylesheet">
+
+    <title>Katu Antivilo | Portafolio</title>
   </head>
   <body>
     <!-- Navbar-->
-  
-    <nav id="Nav" class="navbar navbar-expand-lg navbar-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-      <img src="/docs/4.4/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="../index.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="sobremi.html">Sobre Mi</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="portafolio.html">Portafolio</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Servicios
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+  <div clas="container-fluid ">
+    <nav id="barra" class="navbar navbar-expand-lg navbar-light py-0 my-0">
+        <a class="navbar-brand" href="../index.html">
+        <img id="logo" id="logo" src="../img/solo-logo.png" alt="">
+        </a> 
+        <a class="navbar-brand" href="../index.html">
+        <h2 id="katu">Katu Antivilo</h2>
+        <p id="frase">Makeup & Hairstyle</p>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sobremi.html">Sobre Mi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portafolio.html">Portafolio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Servicios
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="../categorias/novias.html">Novias</a>
               <a class="dropdown-item" href="../categorias/social.html">Social</a>
               <a class="dropdown-item" href="../categorias/moda.html">Moda</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contacto.html">Contacto</a>
-        </li>
-      </ul>
-    </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
   </nav>
 </div>
-
   <!--/Navbar-->
 
   <!--Portafolio-->
 
    <h1 class="title text-center display-4 my-4"> Mis Trabajos</h1>
    <div class="container">
-
    <div><hr></div>
    </div>
   <!--Cards--->
@@ -116,16 +120,23 @@
       </div> 
         <!-- Modal -->
         <div class="modal fade" id="img${imagen}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-          </button>
-              <div class="modal-dialog modal-lg modal-dialog-centered" role="document"> 
-                <img src="img/m${imagen}.jpg" alt="" class="img-fluid rounded">
-              </div>
+         
+          <div class="modal-dialog modal-dialog-centerd" role="document">
+            <div class="modal-content">
+                <div class="modal-body"> 
+                  <img src="img/m${imagen}.jpg" alt="" class="img-fluid rounded">
+                </div>
+                <div class="modal-footer">
+                  <div class="container">
+                  <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#img${imagen-1}">izq</button>
+                  <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#img${imagen+1}">der</button>
+                  </div>
+                </div>
+            </div>
+          </div>       
         </div>
       `;
     }
-
     </script>
 
 

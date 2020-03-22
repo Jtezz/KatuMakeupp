@@ -8,85 +8,93 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/contacto.css">
-    <title>Hello, world!</title>
+    <!--Fuentes-->
+    <link href="https://fonts.googleapis.com/css?family=Yellowtail&display=swap" rel="stylesheet">
+    <title>Katu Antivilo | Contacto</title>
   </head>
   <body>
-   <!-- Navbar-->
-  
-    <nav id="barra" class="navbar navbar-expand-lg navbar-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-      <img src="/docs/4.4/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="../index.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="sobremi.html">Sobre Mi</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="portafolio.html">Portafolio</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Servicios
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+  <!-- Navbar-->
+  <div clas="container-fluid ">
+    <nav id="barra" class="navbar navbar-expand-lg navbar-light py-0 my-0">
+        <a class="navbar-brand" href="../index.html">
+        <img id="logo" id="logo" src="../img/solo-logo.png" alt="">
+        </a> 
+        <a class="navbar-brand" href="../index.html">
+        <h2 id="katu">Katu Antivilo</h2>
+        <p id="frase">Makeup & Hairstyle</p>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sobremi.html">Sobre Mi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portafolio.html">Portafolio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Servicios
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="../categorias/novias.html">Novias</a>
               <a class="dropdown-item" href="../categorias/social.html">Social</a>
               <a class="dropdown-item" href="../categorias/moda.html">Moda</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contacto.html">Contacto</a>
-        </li>
-      </ul>
-    </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
   </nav>
 </div>
-
   <!--/Navbar-->
 
 
   <!--Formulario-->
-<div class="container">
-    <h1 class="title text-center display-4 my-4"> Contactame!</h1>
-    <div><hr></div>
-  <div class="row pb-5">
-    <div class="col-6 mt-5 pt-2">
-      <form>
+<div class="container-fluid">
+  <div id="baner" class="row">
+  </div>
+    <h1 class="title text-center display-4 my-4"> Contacto</h1>
+    <div class="container">
+      <div><hr></div>
+    </div>
+  
+  <div class="row justify-content-md-center pb-5">
+    <div id="formulario" class="col-md-4 col-xs-12 mt-5 pt-2 ">
+      <h2>Envíame un mensaje</h2>
+      <form action="contacto.php" method="post">
         <div class="form-group">
-          <label for="exampleFormControlInput1">Nombre</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+          <input type="text" class="form-control" id="Nombre" name="Nombre" placeholder="Nombre" Required>
         </div>
         <div class="form-group">
-          <label for="exampleFormControlInput1">Asunto</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+          <input type="text" class="form-control" id="Mail" name="Mail" placeholder="Mail" Required>
         </div>
-        <div class="form-group pb-5">
-          <label for="exampleFormControlTextarea1">Mensaje</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <div class="form-group">
+          <input type="text" class="form-control" id="Asunto" name="Asunto" placeholder="Asunto" Required>
         </div>
-        <button class="btn btn-lg btn-primary">Enviar</button>
+        <div class="form-group">
+          <input type="number" class="form-control" id="Telefono" name="Telefono" placeholder="Teléfono" Required>
+        </div>
+        <div class="form-group pb-2">
+          <textarea class="form-control" id="Mensaje" name="Mensaje" placeholder="Mensaje" rows="4" Required></textarea>
+        </div>
+        <button class="btn btn-lg">Enviar</button>
       </form>
     </div>
-    <div class="col-3">
-      <img src="../img/ing.png" class="card-img-top">
-      <h2>
-      <a class="" href="https://www.instagram.com/katumakeup.cl/">@katumakeup.cl</a>
+    <div id="social" class="col-md-4 col-xs-12pt-2 mt-5 pt-2" >
+      <h2>Sigueme instagram<h2>
+      <a href="https://www.instagram.com/katumakeup.cl/" style="text-decoration:none">
+        <img id="ing"src="../img/ing.png" class="img-fluid rounded"><br>   
+      </a>
+      <a href="https://www.instagram.com/katumakeup.cl/"  style="text-decoration:none">katumakeup.cl</a>
     </div>
-    <div class="col-3">
-    <img src="../img/wsp.png" class="card-img-top">
-      <h2>
-      <a>+56912345678</a>
-      </h2>
-    </div>
-    
   </div>
 </div>
   <!-- Footer -->

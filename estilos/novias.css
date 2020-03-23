@@ -2,7 +2,7 @@
 #barra{
     font-family: 'Open Sans', sans-serif;
     background-color: #F3969A;
-    font-size:medium;
+    font-size: 15px;
 }
 #katu{
     font-family: 'Yellowtail', cursive;
@@ -20,6 +20,11 @@
     font-size: small;
     text-align: center;
 }
+/**/
+.container h1{
+    text-align: center;
+}
+
 /*Footer*/
 #footer {
     text-align: center;

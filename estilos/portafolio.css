@@ -23,20 +23,16 @@
 /*Modal*/
 
 /*Footer*/
+/*Footer*/
 #footer {
     text-align: center;
     background-color: #343a40;
     color: #ffffff;
-
 }
 #footer a{
     text-decoration:none;
     color:#ffffff;
 }
-#footer a:hover{
-    color:#77818b;
-
-}
-#footer img{
-    max-height: 36px;
+#icon{
+    font-size: xx-large;
 }

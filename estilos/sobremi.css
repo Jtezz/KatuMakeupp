@@ -34,7 +34,6 @@
 #descripcion {
     font-size: large;
     font-family: 'Open Sans', sans-serif;
-    text-indent: 30px;
 }
 #descripcion hr{
     text-align: center;
@@ -44,20 +43,16 @@
     border-radius: 10px;
 }
 
+/*Footer*/
 #footer {
     text-align: center;
     background-color: #343a40;
     color: #ffffff;
-
 }
 #footer a{
     text-decoration:none;
     color:#ffffff;
 }
-#footer a:hover{
-    color:#77818b;
-
-}
-#footer img{
-    max-height: 36px;
+#icon{
+    font-size: xx-large;
 }

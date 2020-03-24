@@ -24,6 +24,20 @@
 .container h1{
     text-align: center;
 }
+#contenido p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+}
+#contenido h2{
+    font-size: 40px;
+}
+/*Carrusels*/
+#novias img{
+    height:500px;
+}
+#madrinas img{
+    height:500px;
+}
 
 /*Footer*/
 #footer {
@@ -35,12 +49,9 @@
     text-decoration:none;
     color:#ffffff;
 }
-#footer a:hover{
-    color:#77818b;
 
-}
-#footer img{
-    max-height: 36px;
+#icon{
+    font-size: xx-large;
 }
 #servicio h1{
     font-family: "Merienda One";

@@ -111,6 +111,7 @@
     background-color: rgb(252, 225, 104);
 }
 /*Footer*/
+/*Footer*/
 #footer {
     text-align: center;
     background-color: #343a40;
@@ -120,13 +121,10 @@
     text-decoration:none;
     color:#ffffff;
 }
-#footer a:hover{
-    color:#77818b;
-
+#icon{
+    font-size: xx-large;
 }
-#footer img{
-    max-height: 36px;
-}
+/*cosas*/
 #servicio h1{
     font-family: 'Open Sans', sans-serif;
     color:rgb(44, 44, 44);

@@ -90,12 +90,8 @@
     text-decoration:none;
     color:#ffffff;
 }
-#footer a:hover{
-    color:#77818b;
-
-}
-#footer img{
-    max-height: 36px;
+#icon{
+    font-size: xx-large;
 }
 #servicio h1{
     font-family: "Merienda One";

@@ -26,7 +26,11 @@
     padding: 0px;
     height: 675px;
     width: 540px;
-    background-color: brown;
+    text-align: center;
+
+}
+#perfil img{
+    height: 100%;
 }
 #descripcion h1{
     text-align: center;

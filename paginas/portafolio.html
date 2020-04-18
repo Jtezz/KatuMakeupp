@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="../estilos/portafolio.css">
     <!--Fuentes-->
     <link href="https://fonts.googleapis.com/css?family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,400i,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a3a9ec7bb7.js" crossorigin="anonymous"></script>
-
+    
     <title>Katu Antivilo | Portafolio</title>
   </head>
   <body>
@@ -52,16 +53,92 @@
   <!--/Navbar-->
 
   <!--Portafolio-->
-
    <h1 class="title text-center display-4 my-4"> Mis Trabajos</h1>
    <div class="container">
    <div><hr></div>
    </div>
   <!--Cards--->
-    <div class="container">
-      <div class="card-columns" id="portafolio">
+  <div class="contenedor">
+    <header>
+      <div class="categorias" id="categorias">
+        <a href="#" class="activo">Todos</a>
+        <a href="#">Peinados</a>
+        <a href="#">Maquillajes</a>
+        <a href="#">Novias</a>
       </div>
-    </div>
+    </header>
+    <section class="grid" id="grid">
+			<div class="item" 
+				 data-categoria="maquillajes"
+			>
+				<div class="item-contenido">
+					<img src="img/m1.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="peinados"
+				 data-descripcion="2.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/m2.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="maquillajes"
+				 data-descripcion="3.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/m3.jpg" alt="">
+				</div>
+			</div>    
+
+      <div class="item"
+				 data-categoria="peinados"
+				 data-descripcion="4.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/m4.jpg" alt="">
+				</div>
+			</div>
+
+      <div class="item"
+				 data-categoria="novias maquillajes"
+				 data-descripcion="5.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/m5.jpg" alt="">
+				</div>
+			</div>
+
+      <div class="item"
+				 data-categoria="peinados"
+				 data-descripcion="6.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/m6.jpg" alt="">
+				</div>
+			</div>
+
+      <div class="item"
+				 data-categoria="peinados"
+				 data-descripcion="7.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/m7.jpg" alt="">
+				</div>
+			</div>  
+    </section>
+
+    <section class="overlay" id="overlay">
+			<div class="contenedor-img">
+				<button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+				<img src="" alt="">
+			</div>
+		</section>
+
+  </div>
   <!--Scrip Portafolio-->
 <!--Footer-->
  <footer id="footer" class="page-footer ">
@@ -95,40 +172,11 @@
 
 </footer>
 <!-- Footer -->
-    <script>
-
-    var imagenes =[1,2,3,4,5,6,7];
-    var galeria = document.getElementById('portafolio');
+    <!--Muuri-->
+    <script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+    <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
     
-    for(imagen of imagenes){
-      galeria.innerHTML += `
-      <div class="card">
-        <a href="#"  data-toggle="modal" data-target="#img${imagen}">
-            <img src="img/m${imagen}.jpg" class="card-img-top">
-      </div> 
-        <!-- Modal -->
-        <div class="modal fade" id="img${imagen}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-         
-          <div class="modal-dialog modal-dialog-centerd" role="document">
-            <div class="modal-content">
-                <div class="modal-body"> 
-                  <img src="img/m${imagen}.jpg" alt="" class="img-fluid rounded">
-                </div>
-                <div class="modal-footer">
-                  <div class="container">
-                  <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#img${imagen-1}">izq</button>
-                  <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#img${imagen+1}">der</button>
-                  </div>
-                </div>
-            </div>
-          </div>       
-        </div>
-      `;
-    }
-    </script>
-
-
-
+    <script src="portafolio.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

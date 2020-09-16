@@ -4,24 +4,8 @@
 }
 #barra{
     font-family: 'Open Sans', sans-serif;
-    background-color: #F3969A;
+    background-color:#ffe1e1;
     font-size: 15px;
-}
-#katu{
-    font-family: 'Yellowtail', cursive;
-    color: 	#0a0a0a;
-    font-size: 30px;
-    position: relative;
-    margin: 0px;
-    padding: 0px;
-}
-#frase{
-    position: relative;
-    bottom: 5px;
-    margin: 0px;
-    padding: 0px;
-    font-size: small;
-    text-align: center;
 }
 /*Baner*/
 /*Formulario*/
@@ -33,7 +17,7 @@
     font-family: 'Open Sans', sans-serif;
 }
 #formulario button{
-    background-color:#bca0e2 ;
+    background-color:#ffc3a0 ;
     color:white;
     height: 60px;
     width: 200px;
@@ -46,7 +30,7 @@
 }
 #formulario input{
     border: none;
-    border-bottom:solid #bca0e2 0.2rem ;
+    border-bottom:solid #ffe1e1 0.2rem ;
     font-size: 20px;
     font-style: italic;
 }
@@ -55,7 +39,7 @@
 }
 #formulario textarea{
     border: none;
-    border-bottom:solid #bca0e2 0.2rem ;
+    border-bottom:solid #ffe1e1 0.2rem ;
     font-size: 20px;
     font-style: italic;
 }

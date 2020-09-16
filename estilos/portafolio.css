@@ -6,25 +6,10 @@
 /*Barra*/
 #barra{
     font-family: 'Open Sans', sans-serif;
-    background-color: #F3969A;
+    background-color:#ffe1e1;
     font-size: 15px;
 }
-#katu{
-    font-family: 'Yellowtail', cursive;
-    color: 	#0a0a0a;
-    font-size: 30px;
-    position: relative;
-    margin: 0px;
-    padding: 0px;
-}
-#frase{
-    position: relative;
-    bottom: 5px;
-    margin: 0px;
-    padding: 0px;
-    font-size: small;
-    text-align: center;
-}
+
 /*Modal*/
 .contenedor {
 	width: 90%;
@@ -41,15 +26,21 @@ header .categorias a{
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
+    font-style: italic;
 
 }
 header .categorias a:hover{
     text-decoration: none;
+    color: #fafafa;
 }
 
 header .categorias a.activo {
-    color: black;
+    color: #fafafa;
 
+}
+header .categorias a{
+    width: 130px;
+    background-color: #F3969A;;
 }
 /* Grid*/
 

@@ -12,6 +12,7 @@ Bauer Bodoni:https://fonts.google.com/specimen/Roboto?preview.text=Bauer+Bodoni&
 Futura:https://fonts.google.com/specimen/Roboto?preview.text=Futura&preview.text_type=custom
 
 */
+
 .subtitulo{
     text-align: center;
     font-weight: 300;
@@ -25,23 +26,7 @@ Futura:https://fonts.google.com/specimen/Roboto?preview.text=Futura&preview.text
 #barra{
     font-family: 'Open Sans', sans-serif;
     background-color:#ffe1e1;
-    color: #343a40;
     font-size: 15px;
-}
-#barra a{
-    text-decoration: none;
-    color: #343a40;
-}
-.boton-contacto{
-    color: #fafafa;
-}
-#frase{
-    position: relative;
-    bottom: 5px;
-    margin: 0px;
-    padding: 0px;
-    font-size: small;
-    text-align: center;
 }
 /*Carrusel*/
 
@@ -187,8 +172,27 @@ Futura:https://fonts.google.com/specimen/Roboto?preview.text=Futura&preview.text
     font-weight: bolder;
     text-align: center;
 }
-
-/*Footer*/
+.contenedor-icon a{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background: #ff8187;
+    color: #ffffff;
+    margin: 20px;
+    text-align: center;
+    border-radius: 80px;
+    transition: .3s ease all;
+}
+.contenedor-icon a i{
+    font-size: 50px;
+    line-height: 80px;
+}
+.sub-contacto{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-weight: 300;
+    color:  #343a40;
+}
 /*Footer*/
 #footer {
     text-align: center;
